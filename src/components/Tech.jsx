@@ -15,9 +15,7 @@ const Tech = () => {
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
                 <RiReactjsLine className="text-7xl text-cyan-400"/>
             </div>
-            {/* <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandNextjs className="text-7xl "/>
-            </div> */}
+
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
                 <BiLogoPostgresql className="text-7xl text-sky-700"/>
             </div>
@@ -34,7 +32,7 @@ const Tech = () => {
                 <SiTypescript className="text-7xl text-sky-600"/>
             </div>
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaGitAlt className="text-7xl text-orange-500"/>
+                <FaGitAlt className="text-7xl text-orange-600"/>
             </div>
         </div>
     </div>
