@@ -1,8 +1,11 @@
 // Contact.jsx
 import React from "react";
+import { Mail } from "lucide-react";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; 
 import { motion } from "framer-motion"; 
-import { BiLogoGmail } from "react-icons/bi";
+// import { FaSquareXTwitter } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+
 
 const Contact = () => {
   return (
@@ -37,7 +40,13 @@ const Contact = () => {
           </button>
         </div>
 
-        <p className="text-gray-300 text-xl font-semibold">jivtesh.al22@bitsathy.ac.in</p>
+        {/* <p className="text-gray-300 text-xl font-semibold">jivtesh.al22@bitsathy.ac.in</p> */}
+        <div className="flex items-center space-x-2 justify-end">
+          <Mail className="text-gray-300 h-6 w-6" />
+          <p className="text-gray-300 text-xl font-semibold">
+            jivtesh.al22@bitsathy.ac.in
+          </p>
+        </div>
       </div>
 
       {/* Divider */}
@@ -55,9 +64,9 @@ const Contact = () => {
 
       {/* Social Links */}
       <div className="flex space-x-4 mt-4">
-        <FaLinkedin className="h-6 w-6 text-gray-300 hover:text-gray-100 transition" />
-        <FaGithub className="h-6 w-6 text-gray-300 hover:text-gray-100 transition" />
-        <FaTwitter className="h-6 w-6 text-gray-300 hover:text-gray-100 transition" />
+        <FaLinkedin className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
+        <FaGithub className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
+        <BsTwitterX className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
       </div>
     </div>
   );
