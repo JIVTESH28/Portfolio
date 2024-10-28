@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 // import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 
-const Contact = () => {
+const contact = () => {
   return (
     <div className="flex flex-col items-center text-center space-y-8 p-8">
       {/* Top Section */}
@@ -76,4 +76,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default contact;
