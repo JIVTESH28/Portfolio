@@ -67,9 +67,9 @@ const Contact = () => {
       {/* Social Links */}
       <div className="flex space-x-4 mt-4">
         <FaLinkedin className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
-        <a href="https://github.com/JIVTESH28">
+
           <FaGithub className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
-        </a>
+
         <BsTwitterX className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
       </div>
     </div>
