@@ -1,11 +1,10 @@
 // Contact.jsx
 import React from "react";
 import { Mail } from "lucide-react";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; 
-import { motion } from "framer-motion"; 
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 // import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
-
 
 const Contact = () => {
   return (
@@ -13,31 +12,34 @@ const Contact = () => {
       {/* Top Section */}
       <div className="w-full flex justify-between items-center">
         <div className="flex flex-col items-start space-y-4">
-          <h2 className="text-3xl font-semibold text-white ">In need of a developer?</h2>
-          
+          <h2 className="text-3xl font-semibold text-white ">
+            In need of a developer?
+          </h2>
+
           <div className="flex items-center space-x-2 text-gray-300">
-        <motion.span
-          className="inline-block h-4 w-4 rounded-full bg-cyan-500"
-          animate={{
-            scale: [1, 1.2, 1], 
-            boxShadow: [
-              "0px 0px 0px rgba(0, 153, 255, 0.5)",
-              "0px 0px 10px rgba(0, 153, 255, 1)",
-              "0px 0px 0px rgba(0, 153, 255, 0.5)"
-            ] 
-          }}
-          transition={{
-            duration: 1.5,
-            ease: "easeInOut",
-            repeat: Infinity 
-          }}
-        />
+            <motion.span
+              className="inline-block h-4 w-4 rounded-full bg-cyan-500"
+              animate={{
+                scale: [1, 1.2, 1],
+                boxShadow: [
+                  "0px 0px 0px rgba(0, 153, 255, 0.5)",
+                  "0px 0px 10px rgba(0, 153, 255, 1)",
+                  "0px 0px 0px rgba(0, 153, 255, 0.5)",
+                ],
+              }}
+              transition={{
+                duration: 1.5,
+                ease: "easeInOut",
+                repeat: Infinity,
+              }}
+            />
             <p className="text-lg ">I’m currently available for work.</p>
           </div>
-
-          <button className="px-5 py-2 bg-sky-500 text-white rounded-3xl hover:bg-cyan-500 transition font-semibold">
-            Send a message
-          </button>
+          <a href="mailto:jivtesh.al22@bitsathy.ac.in">
+            <button className="px-5 py-2 bg-sky-500 text-white rounded-3xl hover:bg-cyan-500 transition font-semibold">
+              Send a message
+            </button>
+          </a>
         </div>
 
         {/* <p className="text-gray-300 text-xl font-semibold">jivtesh.al22@bitsathy.ac.in</p> */}
@@ -65,7 +67,9 @@ const Contact = () => {
       {/* Social Links */}
       <div className="flex space-x-4 mt-4">
         <FaLinkedin className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
-        <FaGithub className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
+        <a href="https://github.com/JIVTESH28">
+          <FaGithub className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
+        </a>
         <BsTwitterX className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
       </div>
     </div>
