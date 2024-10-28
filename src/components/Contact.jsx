@@ -2,6 +2,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; 
 import { motion } from "framer-motion"; 
+import { BiLogoGmail } from "react-icons/bi";
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
           <h2 className="text-3xl font-semibold text-white ">In need of a developer?</h2>
           
           <div className="flex items-center space-x-2 text-gray-300">
-            <motion.span
+        <motion.span
           className="inline-block h-4 w-4 rounded-full bg-cyan-500"
           animate={{
             scale: [1, 1.2, 1], 
@@ -20,7 +21,7 @@ const Contact = () => {
               "0px 0px 0px rgba(0, 153, 255, 0.5)",
               "0px 0px 10px rgba(0, 153, 255, 1)",
               "0px 0px 0px rgba(0, 153, 255, 0.5)"
-            ] // Glow effect
+            ] 
           }}
           transition={{
             duration: 1.5,
@@ -35,7 +36,7 @@ const Contact = () => {
             Send a message
           </button>
         </div>
-        
+
         <p className="text-gray-300 text-xl font-semibold">jivtesh.al22@bitsathy.ac.in</p>
       </div>
 
