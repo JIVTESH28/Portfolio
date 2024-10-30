@@ -12,11 +12,21 @@ const contact = () => {
       {/* Top Section */}
       <div className="w-full flex justify-between items-center">
         <div className="flex flex-col items-start space-y-4">
-          <h2 className="text-4xl font-semibold bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent ">
+          <motion.h2
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 1, x: -100 }}
+            transition={{ duration: 1 }}
+            className="text-4xl font-semibold bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent "
+          >
             In need of a developer?
-          </h2>
+          </motion.h2>
 
-          <div className="flex items-center space-x-2 text-gray-300">
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 1, x: -100 }}
+            transition={{ duration: 1 }}
+            className="flex items-center space-x-2 text-gray-300"
+          >
             <motion.span
               className="inline-block h-4 w-4 rounded-full bg-cyan-500"
               animate={{
@@ -33,8 +43,10 @@ const contact = () => {
                 repeat: Infinity,
               }}
             />
-            <p className="text-lg font-semibold">I’m currently available for work.</p>
-          </div>
+            <p className="text-lg font-semibold">
+              I’m currently available for work.
+            </p>
+          </motion.div>
           <a href="mailto:jivtesh.al22@bitsathy.ac.in">
             <button className="px-5 py-2 bg-sky-500 text-white rounded-3xl hover:bg-cyan-500 transition font-semibold">
               Send a message
@@ -44,12 +56,17 @@ const contact = () => {
 
         {/* <p className="text-gray-300 text-xl font-semibold">jivtesh.al22@bitsathy.ac.in</p> */}
         <a href="mailto:jivtesh.al22@bitsathy.ac.in">
-        <div className="flex items-center space-x-2 justify-end">
-          <Mail className="text-gray-300 h-6 w-6" />
-          <p className="text-gray-300 text-xl font-semibold">
-            jivtesh.al22@bitsathy.ac.in
-          </p>
-        </div>
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 1, x: 100 }}
+            transition={{ duration: 1 }}
+            className="flex items-center space-x-2 justify-end"
+          >
+            <Mail className="text-gray-300 h-6 w-6" />
+            <p className="text-gray-300 text-xl font-semibold">
+              jivtesh.al22@bitsathy.ac.in
+            </p>
+          </motion.div>
         </a>
       </div>
 
@@ -69,7 +86,7 @@ const contact = () => {
       {/* Social Links */}
       <div className="flex space-x-4 mt-4">
         <a href="linkedin.com/in/jivtesh-s-45a39a330">
-        <FaLinkedin className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
+          <FaLinkedin className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
         </a>
         <a href="https://github.com/JIVTESH28">
           <FaGithub className="h-6 w-6 text-gray-300 hover:text-gray-100 transition cursor-pointer" />
