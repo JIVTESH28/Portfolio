@@ -1,9 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Syne:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=general-sans@400,500,600,700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  font-family: "Inter",sans-serif;
+:root {
+  /* Pure dark base */
+  --bg-base: #000000;
+  --bg-raised: #080808;
+  --bg-surface: #0e1017;
+
+  /* Typography */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #526A82;
+
+  /* Accents inspired by reference with technical cyan/amber/orange depth */
+  --accent: #FF5722;
+  --accent-hover: #FF7043;
+  --accent-glow: rgba(255, 87, 34, 0.25);
+  --accent-amber: #F59E0B;
+  --accent-sky: #38BDF8;
+  --accent-cyan: #06B6D4;
+  --accent-violet: #8B5CF6;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(56, 189, 248, 0.12);
+  --border-amber: rgba(255, 87, 34, 0.2);
+
+  /* Font Families */
+  --font-instrument: 'Instrument Sans', sans-serif;
+  --font-geist: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-general: 'General Sans', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-space: 'Space Grotesk', monospace, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  /* Semantic roles */
+  --font-display: var(--font-instrument);
+  --font-headline: var(--font-satoshi);
+  --font-body: var(--font-general);
+  --font-ui: var(--font-geist);
+  --font-tech: var(--font-space);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+  color: #F8FAFC;
+}
+
+body {
+  background: #000000;
+  color: #F8FAFC;
+  overflow-x: hidden;
+  font-family: var(--font-ui);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1e2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Glass & editorial styling */
+.glass-panel {
+  background: rgba(7, 9, 14, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
