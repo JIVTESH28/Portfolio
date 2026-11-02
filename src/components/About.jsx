@@ -61,7 +61,7 @@ export default function About() {
             <div className="w-full max-w-[300px] xs:max-w-[340px] sm:max-w-[360px] lg:max-w-full mx-auto lg:mx-0">
               <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#0a0a0c] rounded-2xl border border-white/10">
                 <img
-                  src="/portrait.jpg"
+                  src="/jivtesh_hero_hd.jpg"
                   alt="Portrait of Jivtesh Sulochan"
                   className="w-full h-full object-cover object-top grayscale contrast-[1.08] brightness-[0.95] pointer-events-none select-none transition-transform duration-700 ease-out hover:scale-[1.02]"
                 />
