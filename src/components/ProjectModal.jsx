@@ -74,7 +74,7 @@ export default function ProjectModal({ slug, onClose }) {
           {/* Modal Scrollable Body */}
           <div 
             data-lenis-prevent 
-            className="p-6 sm:p-8 md:p-10 overflow-y-auto overscroll-contain space-y-8 font-sans"
+            className="flex-1 min-h-0 p-6 sm:p-8 md:p-10 overflow-y-auto overscroll-contain space-y-8 font-sans"
           >
             
             {/* Title & Subtitle */}
